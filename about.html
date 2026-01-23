@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="scroll-progress"></div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Bootstrap UI</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section-padding">
+  <div class="container">
+    <div class="row mb-5">
+      <h2 class="fw-bold text-center">About This Project</h2>
+      <p class="text-center text-muted">Learn how Bootstrap 5 revolutionizes web development</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h4 class="fw-bold mb-3">Project Overview</h4>
+        <p>
+          This project demonstrates how Bootstrap 5 components can be creatively combined to form professional UI layouts. We showcase modern web design principles and best practices in responsive development.
+        </p>
+        <p>
+          Whether you're building a startup website, e-commerce platform, or personal portfolio, Bootstrap 5 provides the foundation you need to succeed.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h4 class="fw-bold mb-3">What We Use</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Bootstrap 5 CDN - Latest version with all features</li>
+          <li class="list-group-item">Responsive Layouts - Mobile-first design approach</li>
+          <li class="list-group-item">Clean Component Composition - Reusable and scalable</li>
+          <li class="list-group-item">Modern Typography - Professional fonts and spacing</li>
+          <li class="list-group-item">Color System - Carefully chosen color palette</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row mt-5">
+      <h3 class="fw-bold text-center mb-4">Our Services</h3>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <h5>Web Design</h5>
+            <p class="small">Beautiful and functional interfaces that users love</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <h5>Mobile First</h5>
+            <p class="small">Optimized for all screen sizes and devices</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <h5>Performance</h5>
+            <p class="small">Fast loading times and smooth interactions</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <h5>Reliable</h5>
+            <p class="small">Tested code and industry best practices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6 class="fw-bold mb-3">Bootstrap UI</h6>
+        <p class="small">Professional, responsive web framework built with Bootstrap 5. Create stunning digital experiences.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6 class="fw-bold mb-3">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+          <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6 class="fw-bold mb-3">Contact Info</h6>
+        <p class="small mb-2">
+          <strong>Email:</strong><br>
+          <a href="mailto:kotisaiprakash7@gmail.com" class="text-decoration-none">kotisaiprakash7@gmail.com</a>
+        </p>
+        <p class="small">
+          <strong>Phone:</strong><br>
+          <a href="tel:+916301696299" class="text-decoration-none">+91 6301696299</a>
+        </p>
+      </div>
+    </div>
+    <hr class="bg-secondary">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="small mb-2">© 2026 Perugu Koti Sai Prakash. All rights reserved.</p>
+        <p class="small text-muted">Built with Bootstrap 5 • Professionally Designed • Fully Responsive</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scroll Animation Script -->
+<script>
+  // Scroll Progress Bar
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    const progressBar = document.querySelector('.scroll-progress');
+    if (progressBar) {
+      progressBar.style.width = scrollPercent + '%';
+    }
+  });
+
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all animatable elements
+  document.querySelectorAll('.scroll-animate, .card, section, h2, h3, h4, p, ul').forEach(el => {
+    if (!el.classList.contains('visible')) {
+      observer.observe(el);
+    }
+  });
+</script>
+</body>
+</html>
